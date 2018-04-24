@@ -1,0 +1,299 @@
+<div class="shadow p-3 mb-5 bg-white rounded">
+    <p class="text-center"><b>System monitorowania i zużywania energii elektrycznej</b></p>
+</div>
+<hr>
+<div class="row justify-content-around">
+    <nav class="navbar navbar-light bg-light"> <!-- logo-->
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">FIT ENERGY
+        </a>
+        <div class="row no-gutters">
+            <div class="d-flex">
+            <!--Przyciski wybierz osiedle/monitoruj/zarządzaj-->
+                <div class="menu">
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target=".bd-example-modal-lg">Wybierz Osiedle</button>
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                            <!--Okno wybierz Osiedle -->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Wybierz Osiedle</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextOsiedle"><b>Wybierz osiedle, które Ciebie interesuje:</b></label>
+                                            <input class="form-control" type="number" placeholder="Osiedle 1, Osiedle 2">
+                                        </div>
+                                        <div>
+                                            <label for="exampleFormControlTextBudynek"><b>Wybierz budynek, który Ciebie interesuje:</b></label>
+                                            <select class="form-control">
+                                            <option>Budynek nr.1</option>
+                                            <option>Budynek nr.2</option>
+                                            <option>Budynek nr.3</option>
+                                            <option>Budynek nr.4</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label for="exampleFormControlTextPiętro"><b>Wybierz piętro, które Ciebie interesuje:</b></label>
+                                            <!--Checkboxy-->
+                                            <div class="form-check">
+                                            <div>
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">Piętro 1</label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                <label class="form-check-label" for="defaultCheck2">Piętro 2</label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck3">Piętro 3</label>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                                <label class="form-check-label" for="defaultCheck4">Piętro 4</label>
+                                            </div>
+                                            </div>
+                                            <!--checkboxy--> 
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cofnij</button>
+                                    <button type="button" class="btn btn-success" data-dismiss="modal">Zatwierdź wybór</button>
+                                </div>
+                                <!--Okno wybierz Osiedle-->
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target=".bd-example-modal-lg1">Monitoruj</button>
+                    <div class="modal fade bd-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                            <!-- Okno Monitoruj -->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongMonitoruj">Monitoruj</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body"> 
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextOsiedle"><b>Wybierz osiedle, które chcesz monitorować:</b></label>
+                                            <input class="form-control" type="number" placeholder="Osiedle 1, Osiedle 2">
+                                        </div>
+                                        <div>
+                                            <label for="exampleFormControlTextBudynek"><b>Wybierz budynek, które chcesz monitorować:</b></label>
+                                            <select class="form-control">
+                                            <option>Budynek nr.1</option>
+                                            <option>Budynek nr.2</option>
+                                            <option>Budynek nr.3</option>
+                                            <option>Budynek nr.4</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label for="exampleFormControlTextPiętro"><b>Wybierz piętro, które chcesz monitorować:</b></label>
+                                            <!-- Checkboxy-->
+                                            <div class="form-check">
+                                                <div>
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">Piętro 1</label>
+                                                </div>
+                                                <div>
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                    <label class="form-check-label" for="defaultCheck2">Piętro 2</label>
+                                                </div>
+                                                <div>
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                                    <label class="form-check-label" for="defaultCheck3">Piętro 3</label>
+                                                </div>
+                                                <div>
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                                    <label class="form-check-label" for="defaultCheck4">Piętro 4</label>
+                                                </div>
+                                            </div>
+                                            <!-- checkboxy--> 
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cofnij</button>
+                                    <button type="button" class="btn btn-dark" data-dismiss="modal">Monitoruj</button>
+                                </div>
+                                <!-- Okno Monitoruj -->
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target=".bd-example-modal-lg2">Zarządzaj</button>
+                    <div class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                            <!--Okno Zarządzaj-->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Zarządzaj</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextOsiedle"><b>Wybierz osiedle, którym chcesz zarządzać:</b></label>
+                                            <input class="form-control" type="number" placeholder="Osiedle 1, Osiedle 2">
+                                        </div>
+                                        <div>
+                                            <label for="exampleFormControlTextBudynek"><b>Wybierz budynek, którym chcesz zarządzać:</b></label>
+                                            <select class="form-control">
+                                                <option>Budynek nr.1</option>
+                                                <option>Budynek nr.2</option>
+                                                <option>Budynek nr.3</option>
+                                                <option>Budynek nr.4</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label for="exampleFormControlTextPiętro"><b>Wybierz piętro, którym chcesz zarządzać:</b></label>
+                                            <!--Checkboxy-->
+                                            <div class="form-check">
+                                                <div>
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">Piętro 1</label>
+                                                </div>
+                                                <div>
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                    <label class="form-check-label" for="defaultCheck2">Piętro 2</label>
+                                                </div>
+                                                <div>
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                                    <label class="form-check-label" for="defaultCheck3">Piętro 3</label>
+                                                </div>
+                                                <div>
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                                    <label class="form-check-label" for="defaultCheck4">Piętro 4</label>
+                                                </div>
+                                            </div>
+                                            <!--checkboxy--> 
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cofnij</button>
+                                    <button type="button" class="btn btn-success" data-dismiss="modal">Zarządzaj</button>
+                                </div>
+                            <!--Okno Zarządzaj-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--przyciski wybierz osiedle/monitoruj/zarządzaj-->  
+            </div>   
+        </div>
+    </nav>
+
+    <!-- Rejestracja i Logowanie -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Zaloguj się</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-6 col-md-offset-3">
+                        <form name="form" ng-submit="vm.login()" role="form">
+                        <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
+                            <label for="username">Login</label>
+                            <input type="text" name="username" id="username" class="form-control" ng-model="vm.username" required />
+                            
+                        </div>
+                        <div class="form-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+                            <label for="password">Hasło</label>
+                            <input type="password" name="password" id="password" class="form-control" ng-model="vm.password" required />
+                            
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-success">Zaloguj</button>
+                            <button type="submit"  class="btn btn-secondary">Nie pamiętam hasła</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="rejestracja/register/register.view.html"  data-toggle="modal" data-target="#exampleModale" 
+                    class="btn btn-outline-success" role="button">Zarejestruj się</a>
+                </div>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cofnij</button>
+            </div>
+        </div>
+    </div>
+    <!--- Przycisk Zarejestruj się-->  
+    <div class="modal fade" id="exampleModale" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Rejestracja</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form name="form" ng-submit="vm.register()" role="form">
+                        <div class="form-group" ng-class="{ 'has-error': form.firstName.$dirty && form.firstName.$error.required }">
+                            <label for="username">Imię</label>
+                            <input type="text" name="firstName" id="firstName" class="form-control" ng-model="vm.user.firstName" required />
+                            
+                        </div>
+                        <div class="form-group" ng-class="{ 'has-error': form.lastName.$dirty && form.lastName.$error.required }">
+                            <label for="username">Nazwisko</label>
+                            <input type="text" name="lastName" id="Text1" class="form-control" ng-model="vm.user.lastName" required />
+                            
+                        </div>
+                        <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
+                            <label for="username">E-mail</label>
+                            <input type="text" name="username" id="username" class="form-control" ng-model="vm.user.username" required />
+                            
+                        </div>
+                        <div class="form-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+                            <label for="password">Hasło</label>
+                            <input type="password" name="password" id="password" class="form-control" ng-model="vm.user.password" required />
+                            
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-outline-success">Zarejestruj się</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cofnij</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- Przycisk zaloguj się -->
+    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal"> Zaloguj się </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    a....
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                    <button type="button" class="btn btn-dark">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>
+
+<hr>
