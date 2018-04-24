@@ -1,0 +1,59 @@
+<button type="button" class="btn btn-dark" data-toggle="modal" data-target=".bd-example-modal-lg2">Zarządzaj</button>
+<div class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <!--Okno Zarządzaj-->
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Zarządzaj</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlTextOsiedle"><b>Wybierz osiedle, którym chcesz zarządzać:</b></label>
+            <input class="form-control" type="number" placeholder="Osiedle 1, Osiedle 2">
+          </div>
+          <div>
+            <label for="exampleFormControlTextBudynek"><b>Wybierz budynek, którym chcesz zarządzać:</b></label>
+            <select class="form-control">
+              <option>Budynek nr.1</option>
+              <option>Budynek nr.2</option>
+              <option>Budynek nr.3</option>
+              <option>Budynek nr.4</option>
+            </select>
+        </div>
+        <div>
+          <label for="exampleFormControlTextPiętro"><b>Wybierz piętro, którym chcesz zarządzać:</b></label>
+          <!--Checkboxy-->
+          <div class="form-check">
+            <div>
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">Piętro 1</label>
+            </div>
+            <div>
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">Piętro 2</label>
+            </div>
+            <div>
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+              <label class="form-check-label" for="defaultCheck3">Piętro 3</label>
+            </div>
+            <div>
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+              <label class="form-check-label" for="defaultCheck4">Piętro 4</label>
+            </div>
+          </div>
+          <!--checkboxy--> 
+         </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cofnij</button>
+        <button type="button" class="btn btn-success" data-dismiss="modal">Zarządzaj</button>
+      </div>
+    <!--Okno Zarządzaj-->
+    </div>
+  </div>
+</div>
