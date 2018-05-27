@@ -50,8 +50,13 @@
         </form>
       </div>
       <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cofnij</button>
-          <button type="button" class="btn btn-success" data-dismiss="modal">Zatwierdź wybór</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cofnij</button>
+        <!-- zatwierdz osiedle -->
+        <nav>
+          <a routerLink="/wybraneosiedla" routerLinkActive="active">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalLong">Zatwierdź wybór</button>
+          </a>
+        </nav>
       </div>
       <!--Okno wybierz Osiedle-->
     </div>
